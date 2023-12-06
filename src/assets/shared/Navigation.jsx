@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
-
+import longLogo from "/image/long-logo.png";
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
@@ -31,7 +31,7 @@ const Navigation = () => {
           <div className="container-fluid">
             <Navbar.Brand>
               <Link to="/">
-                <img src="./image/long-logo.png" height={"50"} alt="" />
+                <img src={longLogo ? longLogo : ""} height={"50"} alt="" />
               </Link>
             </Navbar.Brand>
 
@@ -45,10 +45,10 @@ const Navigation = () => {
               style={{ left: isOpen ? "0" : "-500px" }}
             >
               <ul className="navbar-nav gap-2">
-                <div className="d-block d-md-none py-2">
+                {isOpen && (
                   <div className="d-flex justify-content-between align-items-center">
                     <Navbar.Brand to="/">
-                      <img src="./image/long-logo.png" height={"60"} alt="" />
+                      <img src={longLogo} height={"60"} alt="" />
                     </Navbar.Brand>
                     <div className="icon">
                       <i
@@ -57,7 +57,7 @@ const Navigation = () => {
                       ></i>
                     </div>
                   </div>
-                </div>
+                )}
                 <li className="nav-item ">
                   <NavLink
                     onClick={closeNavbar}

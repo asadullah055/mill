@@ -49,6 +49,10 @@ body {
 .icon i {
   color: red;
 }
+.wrapper {
+ opacity: 0;
+}
+
 @media (max-width: 1200px) {
   .cw {
     width: 100%;
@@ -64,11 +68,14 @@ body {
     right: 0;
     height: 100vh;
     padding: 0 15px;
-    transition: all 0.3s;
+    transition: all 0.3s ease !important;
     z-index: 100;
+    border: 1px solid;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   }
-
+  .wrapper {
+    display: block;
+  }
   .items {
     padding: 0 !important;
   }
