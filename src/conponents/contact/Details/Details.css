@@ -1,0 +1,11 @@
+.icon2 {
+  font-size: 25px;
+  color: #fff;
+  background-color: #3ba34a;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

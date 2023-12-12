@@ -4,12 +4,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+.main-color {
+  color: #3ba34a;
+}
+.fw-400 {
+  font-weight: 700 !important;
+}
 body {
   font-family: "BenSen";
   position: relative;
 }
 .bg-clight {
   background-color: #e5ffe9;
+}
+.bg-clight2 {
+  background-color: #d2f9d8;
 }
 .items {
   font-weight: 600;
@@ -50,7 +59,7 @@ body {
   color: red;
 }
 .wrapper {
- opacity: 0;
+  opacity: 0;
 }
 
 @media (max-width: 1200px) {
@@ -69,9 +78,13 @@ body {
     height: 100vh;
     padding: 0 15px;
     transition: all 0.3s ease !important;
-    z-index: 100;
+    z-index: 999;
     border: 1px solid;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  .res-nav2 {
+    display: flex;
+    flex-direction: column !important;
   }
   .wrapper {
     display: block;

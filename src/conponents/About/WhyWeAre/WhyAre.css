@@ -1,0 +1,30 @@
+.why {
+  position: relative;
+  display: inline;
+}
+.why-are-area {
+  background-color: azure;
+}
+.why::before {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 50%;
+  border-radius: 5px;
+  bottom: -5px;
+  background-color: #3ba34a;
+  background: linear-gradient(90deg, rgb(59, 163, 74), transparent);
+}
+
+.witems {
+  list-style: none;
+  line-height: 2;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: justify;
+}
+.fa-square-check {
+  margin-right: 20px;
+  margin-top: 10px;
+  color: #3ba34a;
+}

@@ -5,12 +5,6 @@ import longLogo from "/image/long-logo.png";
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
-  const openNavbar = () => {
-    setIsOpen(true);
-  };
-  const closeNavbar = () => {
-    setIsOpen(false);
-  };
 
   useEffect(() => {
     const handler = (e) => {
@@ -19,15 +13,12 @@ const Navigation = () => {
       }
     };
     document.addEventListener("mousedown", handler);
-    return () => {
-      document.addEventListener("mousedown", handler);
-    };
   }, []);
 
   return (
-    <div className="bg-clight">
+    <div className="bg-clight sticky-top">
       <div className="container-xl">
-        <Navbar collapseOnSelect expand="md" className="position-static">
+        <Navbar collapseOnSelect expand="md" className="position-static ">
           <div className="container-fluid">
             <Navbar.Brand>
               <Link to="/">
@@ -35,7 +26,7 @@ const Navigation = () => {
               </Link>
             </Navbar.Brand>
 
-            <button onClick={openNavbar} className="btn btn2">
+            <button onClick={() => setIsOpen(!isOpen)} className="btn btn2">
               <i className="fa-solid fa-bars"></i>
             </button>
 
@@ -44,23 +35,22 @@ const Navigation = () => {
               ref={menuRef}
               style={{ left: isOpen ? "0" : "-500px" }}
             >
-              <ul className="navbar-nav gap-2">
+              <ul className="navbar-nav res-nav2 w-100 gap-2">
                 {isOpen && (
                   <div className="d-flex justify-content-between align-items-center">
                     <Navbar.Brand to="/">
-                      <img src={longLogo} height={"60"} alt="" />
+                      <img style={{ width: "140px" }} src={longLogo} alt="" />
                     </Navbar.Brand>
                     <div className="icon">
                       <i
-                        onClick={closeNavbar}
+                        onClick={() => setIsOpen(!isOpen)}
                         className="fa-solid fa-xmark"
                       ></i>
                     </div>
                   </div>
                 )}
-                <li className="nav-item ">
+                <li className="nav-item">
                   <NavLink
-                    onClick={closeNavbar}
                     className={({ isActive }) =>
                       `nav-link items ${isActive ? "actives" : ""}`
                     }
@@ -69,9 +59,8 @@ const Navigation = () => {
                     হোম
                   </NavLink>
                 </li>
-                <li className={`nav-item`}>
+                <li className="nav-item">
                   <NavLink
-                    onClick={closeNavbar}
                     className={({ isActive }) =>
                       `nav-link items ${isActive ? "actives" : ""}`
                     }
@@ -82,7 +71,6 @@ const Navigation = () => {
                 </li>
                 <li className="nav-item">
                   <NavLink
-                    onClick={closeNavbar}
                     className={({ isActive }) =>
                       `nav-link items ${isActive ? "actives" : ""}`
                     }
@@ -93,7 +81,6 @@ const Navigation = () => {
                 </li>
                 <li className="nav-item">
                   <NavLink
-                    onClick={closeNavbar}
                     className={({ isActive }) =>
                       `nav-link items ${isActive ? "actives" : ""}`
                     }

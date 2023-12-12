@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import AboutPage from "./assets/pages/AboutPage";
-import ContactPage from "./assets/pages/ContactPage";
-import GalleryPage from "./assets/pages/GalleryPage";
-import HomePage from "./assets/pages/HomePage";
-import Navigation from "./assets/shared/Navigation";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import GalleryPage from "./pages/GalleryPage";
+import HomePage from "./pages/HomePage";
+import Navigation from "./shared/Navigation";
 
 function App() {
   return (

@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+.form-area {
+  background-color: #d2f9d8;
+}
+.input {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+*:focus {
+  outline: 0px !important;
+  box-shadow: none !important;
+}
+
+input::-webkit-input-placeholder {
+  font-family: "BenSen";
+  font-weight: 700;
+}
+textarea::-webkit-input-placeholder {
+  font-family: "BenSen";
+  font-weight: 700;
+}
+
+.send-btn {
+  background-color: #3ba34a;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.send-btn:hover {
+  background-color: #3ba34a;
+  color: #fff;
+}
