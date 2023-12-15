@@ -1,0 +1,35 @@
+[
+  {
+    "name": "কাটারীভোগ আতপ চাউল",
+    "image": "/image/doyel.jpg",
+    "marka": "দোয়েল",
+    "weight": "২৫ কেজি"
+  },
+  {
+    "name": "গোল্ডেন চাউল",
+    "image": "/image/golden.jpg",
+    "weight": "২৫ কেজি"
+  },
+  {
+    "name": "সুগন্ধি চিনিগুড়া আতপ চাউল",
+    "image": "/image/cinigura.jpg",
+    "weight": "৫০ কেজি"
+  },
+  {
+    "name": "সুগন্ধি চিনিগুড়া চাউল",
+    "image": "/image/sugondhi.jpg",
+    "marka": "মোড়গ",
+    "weight": "২৫ কেজি"
+  },
+  {
+    "name": "চিনিগুড়া আতপ চাউল",
+    "marka": "শঙ্খ",
+    "image": "/image/songkho-01.jpg",
+    "weight": "২৫ কেজি"
+  },
+  {
+    "name": "সুগন্ধি চিনিগুড়া চাউল",
+    "image": "/image/products-1kg.png",
+    "weight": "১ কেজি"
+  }
+]

@@ -39,13 +39,7 @@ const Chairman = () => {
                 করা। সর্বোপরি, অসহায় ও সুবিধাবঞ্চিত মানুষদের সেবা করা। আমার এই
                 পথচলায়, আমি আপনাদের দোয়া কামনা করি
               </p>
-              <h5 className="space-letter">
-                <span>মোবাইল নাম্বার: </span>০১৭১৬৪১২৭০৭
-              </h5>
             </div>
-            {/* <div className="col-md-3 justify-content-center">
-              <img src="/image/rice-logo02.png" className="img-fluid" alt="" />
-            </div> */}
           </div>
         </div>
       </div>

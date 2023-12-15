@@ -1,4 +1,5 @@
 @import url("https://fonts.maateen.me/bensen/font.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +8,19 @@
 .main-color {
   color: #3ba34a;
 }
+.main-bg {
+  background-color: #3ba34a;
+}
 .fw-400 {
   font-weight: 700 !important;
 }
 body {
   font-family: "BenSen";
   position: relative;
+}
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
 }
 .bg-clight {
   background-color: #e5ffe9;
@@ -60,6 +68,13 @@ body {
 }
 .wrapper {
   opacity: 0;
+}
+.c-img {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.c-img:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 1200px) {
